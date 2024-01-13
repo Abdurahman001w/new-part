@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let obj1 = {
+      //  name: "Abdurahman",
+      //   age: 17,
+      //  };
+      //  console.log(obj1);
+      //   let obj2 = { ...obj1, city: "grozny" };
+
+      //  obj2.name = "maga";
+      //  let obj2 = obj1;
+      //   obj2.city = "grozny";
+      //   console.log(obj2);
+      // let arr = [3, 5, 7, 2, 7];
+      //  let arr2 = arr.filter((item) => {
+      //  return item;
+      ///});
+      //arr2[2] = 100;
+
+      //  console.log(arr);
+      //  console.log(arr2);
+      //  fn(343, 6, 76, 566, 22);
+      //  function fn(x, y, z, ...args) {
+      ///     console.log(args);
+      ///   }
+      let arr_1 = [101, 202, 303, 404, 505];
+      let arr_2 = [606, 707, 808, 909];
+      let superArr = arr_1.concat(arr_2);
+      let Number = Math.min(...superArr);
+      console.log(Number);
+
+      let obj = {
+        width: 300,
+        height: 550,
+      };
+
+      let newobject = Object.assign({}, obj);
+
+      newobject.area = function () {
+        return this.width * this.height;
+      };
+
+      console.log(newobject.area());
+
+      function sum() {
+        let result = 0;
+
+        for (let i = 0; i < arguments.length; i++) {
+          result += arguments[i];
+        }
+
+        return result;
+      }
+
+      console.log(sum(22, 33, 11));
+      console.log(sum(55, 53, 32, 32));
+    </script>
+  </body>
+</html>
